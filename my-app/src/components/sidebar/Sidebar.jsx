@@ -11,12 +11,15 @@ import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">HiBooking Admin</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">HiBooking Admin</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
@@ -76,7 +79,10 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
-      <div className="bottom">color options</div>
+      <div className="bottom">
+        <div className="colorOptions"></div>
+        <div className="colorOptions"></div>
+      </div>
     </div>
   );
 };

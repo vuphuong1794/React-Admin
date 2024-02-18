@@ -4,7 +4,7 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import Widget from "../../components/widget/Widget";
 import Feature from "../../components/feature/Feature";
-import Charts from "../../components/charts/Charts";
+import Chart from "../../components/charts/Charts";
 
 const Home = () => {
   return (
@@ -20,7 +20,7 @@ const Home = () => {
         </div>
         <div className="charts">
           <Feature />
-          <Charts />
+          <Chart title="Last 6 Months (Revenue)" aspect={2 / 1} />
         </div>
       </div>
     </div>

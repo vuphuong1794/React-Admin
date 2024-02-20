@@ -1,0 +1,16 @@
+.singlePage {
+  display: flex;
+  width: 100%;
+
+  .singleContainer {
+    flex: 6;
+
+    .top {
+      padding: 5px;
+      display: flex;
+
+      .left {
+      }
+    }
+  }
+}

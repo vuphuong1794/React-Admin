@@ -27,7 +27,7 @@ const Home = () => {
           <div className="listContainer">
             <div className="listTitle">Lastest transactions</div>
             <Table />
-            phuong
+            
           </div>
         </div>
       </div>

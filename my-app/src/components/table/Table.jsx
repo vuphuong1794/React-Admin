@@ -8,9 +8,6 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import "./table.scss";
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
 const List = () => {
   const rows = [
     {
@@ -93,8 +90,9 @@ const List = () => {
               <TableCell align="tableCell">{row.date}</TableCell>
               <TableCell align="tableCell">{row.amount}</TableCell>
               <TableCell align="tableCell">{row.method}</TableCell>
-              <TableCell align="tableCell" className={`status ${row.status}`}>
-                {row.status}
+              <TableCell align="tableCell">
+                <span className={`status ${row.status}`}>{row.status}</span>
+        
               </TableCell>
             </TableRow>
           ))}

@@ -2,6 +2,8 @@ import React from "react";
 import "./single.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
+import Chart from "../../components/charts/Charts";
+import Table from "../../components/table/Table"
 
 const Single = () => {
   return (
@@ -10,17 +12,20 @@ const Single = () => {
 
       <div className="singleContainer">
         <Navbar />
+        
         <div className="top">
           <div className="left">
-            <div className="title">Information</div>
             <div className="item">
+              <span className="title">Information</span>
               <img
                 src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
                 alt=""
                 className="userImg"
               />
+              
             </div>
             <div className="details">
+              <span className="editButton">Edit</span>
               <div className="detailTitle">Jane Doe</div>
               <div className="detailItem">
                 <span className="itemKey">Email:</span>
@@ -42,9 +47,13 @@ const Single = () => {
               </div>
             </div>
           </div>
-          <div className="right"></div>
+          <div className="right">
+          <Chart aspect={4 / 1} title="User Spending ( Last 6 Months)" />
+          </div>
         </div>
-        <div className="bottom"></div>
+        <div className="bottom">
+          <Table/>
+        </div>
       </div>
     </div>
   );

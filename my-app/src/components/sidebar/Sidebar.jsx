@@ -33,12 +33,16 @@ const Sidebar = () => {
           </li>
           <p className="title">LISTS</p>
           <li>
-            <PersonOutlineOutlinedIcon className="icon" />
-            <span>Users</span>
+            <Link to="/users" style={{textDecoration: "none"}}>
+              <PersonOutlineOutlinedIcon className="icon" />
+              <span>Users</span>
+            </Link>
           </li>
           <li>
-            <StoreIcon className="icon" />
-            <span>Products</span>
+            <Link to="/products" style={{textDecoration:"none"}}>
+              <StoreIcon className="icon" />
+              <span>Products</span>
+            </Link>
           </li>
           <li>
             <CreditCardIcon className="icon" />
